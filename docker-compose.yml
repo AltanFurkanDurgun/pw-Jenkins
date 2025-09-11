@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  playwright-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: playwright-test
+    command: npm run test
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results:/app/test-results
+

@@ -1,0 +1,18 @@
+{
+  "name": "playwrightapi-pom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "updateUsername": "npx playwright test test/updateUsername.spec.ts",
+    "test": "npx playwright test test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0"
+  }
+}
