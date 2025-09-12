@@ -3,7 +3,7 @@
     "configFile": "/Users/n100590/Desktop/playwrightApi-POM/playwright.config.ts",
     "rootDir": "/Users/n100590/Desktop/playwrightApi-POM/test",
     "forbidOnly": false,
-    "fullyParallel": true,
+    "fullyParallel": false,
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
@@ -11,13 +11,15 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 4
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
       [
-        "list",
-        null
+        "html",
+        {
+          "open": "always"
+        }
       ],
       [
         "json",
@@ -37,7 +39,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "getToken",
         "name": "getToken",
@@ -53,7 +55,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -69,7 +71,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 4
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -85,7 +87,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.55.0",
-    "workers": 4,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
@@ -111,16 +113,16 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 603,
+                  "duration": 503,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Token saved to .auth/token.json Token= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMjExMH0sImlhdCI6MTc1Njk4NjAyNSwiZXhwIjoxNzYyMTcwMDI1fQ.ibUmzA1SlaAlPorejO4O9fmaGgbPj9Z479eKF8yfBPE\n"
+                      "text": "Token saved to .auth/token.json Token= eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozMjExMH0sImlhdCI6MTc1NzY4MjEwMSwiZXhwIjoxNzYyODY2MTAxfQ.xH1ZXGK5ZQ-zmdwV0X9TvpEN3CMY2POvipozzfXH1dM\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-09-04T11:40:24.471Z",
+                  "startTime": "2025-09-12T13:01:41.412Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -157,7 +159,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 739,
+                  "duration": 553,
                   "errors": [],
                   "stdout": [
                     {
@@ -167,27 +169,27 @@
                       "text": "https://conduit-api.bondaracademy.com/api/articles/\n"
                     },
                     {
-                      "text": "Response body= {\"article\":{\"slug\":\"New-Article_Yessenia-32110\",\"title\":\"New Article_Yessenia\",\"description\":\"New Article Descpription_Agender\",\"body\":\"New Article Body_Response\",\"tagList\":[\"playwright\"],\"createdAt\":\"2025-09-04T11:40:26.125Z\",\"updatedAt\":\"2025-09-04T11:40:26.125Z\",\"favorited\":false,\"favoritesCount\":0,\"author\":{\"username\":\"User_Brigitte\",\"bio\":null,\"image\":\"update new\",\"following\":false}}}\n"
+                      "text": "Response body= {\"article\":{\"slug\":\"New-Article_Carmine-32110\",\"title\":\"New Article_Carmine\",\"description\":\"New Article Descpription_Trigender\",\"body\":\"New Article Body_Tactics\",\"tagList\":[\"playwright\"],\"createdAt\":\"2025-09-12T13:01:42.777Z\",\"updatedAt\":\"2025-09-12T13:01:42.777Z\",\"favorited\":false,\"favoritesCount\":0,\"author\":{\"username\":\"User_Romaine\",\"bio\":null,\"image\":\"update new\",\"following\":false}}}\n"
                     },
                     {
                       "text": "Created\n"
                     },
                     {
-                      "text": "{\"article\":{\"slug\":\"New-Article_Yessenia-32110\",\"title\":\"New Article_Yessenia\",\"description\":\"New Article Descpription_Agender\",\"body\":\"New Article Body_Response\",\"tagList\":[\"playwright\"],\"createdAt\":\"2025-09-04T11:40:26.125Z\",\"updatedAt\":\"2025-09-04T11:40:26.125Z\",\"favorited\":false,\"favoritesCount\":0,\"author\":{\"username\":\"User_Brigitte\",\"bio\":null,\"image\":\"update new\",\"following\":false}}}\n"
+                      "text": "{\"article\":{\"slug\":\"New-Article_Carmine-32110\",\"title\":\"New Article_Carmine\",\"description\":\"New Article Descpription_Trigender\",\"body\":\"New Article Body_Tactics\",\"tagList\":[\"playwright\"],\"createdAt\":\"2025-09-12T13:01:42.777Z\",\"updatedAt\":\"2025-09-12T13:01:42.777Z\",\"favorited\":false,\"favoritesCount\":0,\"author\":{\"username\":\"User_Romaine\",\"bio\":null,\"image\":\"update new\",\"following\":false}}}\n"
                     },
                     {
                       "text": "application/json; charset=utf-8\n"
                     },
                     {
-                      "text": "[\n  { name: \u001b[32m'x-powered-by'\u001b[39m, value: \u001b[32m'Express'\u001b[39m },\n  { name: \u001b[32m'vary'\u001b[39m, value: \u001b[32m'Origin'\u001b[39m },\n  { name: \u001b[32m'content-type'\u001b[39m, value: \u001b[32m'application/json; charset=utf-8'\u001b[39m },\n  { name: \u001b[32m'etag'\u001b[39m, value: \u001b[32m'W/\"188-wHb40L2AvYtsXdo6Nglk549+ryQ\"'\u001b[39m },\n  {\n    name: \u001b[32m'x-cloud-trace-context'\u001b[39m,\n    value: \u001b[32m'9e60e70575bf8532a54d3573256f4564'\u001b[39m\n  },\n  { name: \u001b[32m'date'\u001b[39m, value: \u001b[32m'Thu, 04 Sep 2025 11:40:26 GMT'\u001b[39m },\n  { name: \u001b[32m'server'\u001b[39m, value: \u001b[32m'Google Frontend'\u001b[39m },\n  { name: \u001b[32m'Content-Length'\u001b[39m, value: \u001b[32m'392'\u001b[39m }\n]\n"
+                      "text": "[\n  { name: \u001b[32m'x-powered-by'\u001b[39m, value: \u001b[32m'Express'\u001b[39m },\n  { name: \u001b[32m'vary'\u001b[39m, value: \u001b[32m'Origin'\u001b[39m },\n  { name: \u001b[32m'content-type'\u001b[39m, value: \u001b[32m'application/json; charset=utf-8'\u001b[39m },\n  { name: \u001b[32m'etag'\u001b[39m, value: \u001b[32m'W/\"186-qgrJrWHb3HyoTdzmwq7quU90pes\"'\u001b[39m },\n  {\n    name: \u001b[32m'x-cloud-trace-context'\u001b[39m,\n    value: \u001b[32m'90f29ae16d2060e1a2c715368a33984b'\u001b[39m\n  },\n  { name: \u001b[32m'date'\u001b[39m, value: \u001b[32m'Fri, 12 Sep 2025 13:01:42 GMT'\u001b[39m },\n  { name: \u001b[32m'server'\u001b[39m, value: \u001b[32m'Google Frontend'\u001b[39m },\n  { name: \u001b[32m'Content-Length'\u001b[39m, value: \u001b[32m'390'\u001b[39m }\n]\n"
                     },
                     {
-                      "text": "Slug Id= New-Article_Yessenia-32110\n"
+                      "text": "Slug Id= New-Article_Carmine-32110\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-09-04T11:40:25.703Z",
+                  "startTime": "2025-09-12T13:01:42.393Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -197,7 +199,7 @@
           ],
           "id": "3574f5c07a8577fe4bf5-a9e41f988378bc9e51d1",
           "file": "conduit.spec.ts",
-          "line": 8,
+          "line": 6,
           "column": 5
         },
         {
@@ -216,7 +218,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 444,
+                  "duration": 365,
                   "errors": [],
                   "stdout": [
                     {
@@ -226,12 +228,12 @@
                       "text": "OK\n"
                     },
                     {
-                      "text": "New slugId= New-Article-update_Human-Paradigm-Consultant-32110\n"
+                      "text": "New slugId= New-Article-update_Internal-Communications-Manager-32110\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-09-04T11:40:26.455Z",
+                  "startTime": "2025-09-12T13:01:42.962Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -241,7 +243,7 @@
           ],
           "id": "3574f5c07a8577fe4bf5-1b04ce5e3ca9f30983af",
           "file": "conduit.spec.ts",
-          "line": 39,
+          "line": 37,
           "column": 5
         },
         {
@@ -260,7 +262,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 233,
+                  "duration": 228,
                   "errors": [],
                   "stdout": [
                     {
@@ -272,7 +274,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-09-04T11:40:26.908Z",
+                  "startTime": "2025-09-12T13:01:43.341Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -282,151 +284,7 @@
           ],
           "id": "3574f5c07a8577fe4bf5-7e079c889efb087bfc46",
           "file": "conduit.spec.ts",
-          "line": 64,
-          "column": 5
-        },
-        {
-          "title": "new article",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 734,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Bu test şu worker üzerinde çalışıyor: 4\n"
-                    },
-                    {
-                      "text": "https://conduit-api.bondaracademy.com/api/articles/\n"
-                    },
-                    {
-                      "text": "Response body= {\"article\":{\"slug\":\"New-Article_Kyler-32110\",\"title\":\"New Article_Kyler\",\"description\":\"New Article Descpription_Transsexual man\",\"body\":\"New Article Body_Operations\",\"tagList\":[\"playwright\"],\"createdAt\":\"2025-09-04T11:40:26.128Z\",\"updatedAt\":\"2025-09-04T11:40:26.128Z\",\"favorited\":false,\"favoritesCount\":0,\"author\":{\"username\":\"User_Brigitte\",\"bio\":null,\"image\":\"update new\",\"following\":false}}}\n"
-                    },
-                    {
-                      "text": "Created\n"
-                    },
-                    {
-                      "text": "{\"article\":{\"slug\":\"New-Article_Kyler-32110\",\"title\":\"New Article_Kyler\",\"description\":\"New Article Descpription_Transsexual man\",\"body\":\"New Article Body_Operations\",\"tagList\":[\"playwright\"],\"createdAt\":\"2025-09-04T11:40:26.128Z\",\"updatedAt\":\"2025-09-04T11:40:26.128Z\",\"favorited\":false,\"favoritesCount\":0,\"author\":{\"username\":\"User_Brigitte\",\"bio\":null,\"image\":\"update new\",\"following\":false}}}\n"
-                    },
-                    {
-                      "text": "application/json; charset=utf-8\n"
-                    },
-                    {
-                      "text": "[\n  { name: \u001b[32m'x-powered-by'\u001b[39m, value: \u001b[32m'Express'\u001b[39m },\n  { name: \u001b[32m'vary'\u001b[39m, value: \u001b[32m'Origin'\u001b[39m },\n  { name: \u001b[32m'content-type'\u001b[39m, value: \u001b[32m'application/json; charset=utf-8'\u001b[39m },\n  { name: \u001b[32m'etag'\u001b[39m, value: \u001b[32m'W/\"18c-LwrpfOEVg6oSOoVbHfqQO92sazk\"'\u001b[39m },\n  {\n    name: \u001b[32m'x-cloud-trace-context'\u001b[39m,\n    value: \u001b[32m'009e7c0092f06ed306c3d1de48ffb73a'\u001b[39m\n  },\n  { name: \u001b[32m'date'\u001b[39m, value: \u001b[32m'Thu, 04 Sep 2025 11:40:26 GMT'\u001b[39m },\n  { name: \u001b[32m'server'\u001b[39m, value: \u001b[32m'Google Frontend'\u001b[39m },\n  { name: \u001b[32m'Content-Length'\u001b[39m, value: \u001b[32m'396'\u001b[39m }\n]\n"
-                    },
-                    {
-                      "text": "Slug Id= New-Article_Kyler-32110\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-09-04T11:40:25.709Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3574f5c07a8577fe4bf5-8ffbfe769a29bb5dd21e",
-          "file": "conduit.spec.ts",
-          "line": 8,
-          "column": 5
-        },
-        {
-          "title": "Update article",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 430,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Bu test şu worker üzerinde çalışıyor: 4\n"
-                    },
-                    {
-                      "text": "OK\n"
-                    },
-                    {
-                      "text": "New slugId= New-Article-update_Legacy-Functionality-Supervisor-32110\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-09-04T11:40:26.456Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3574f5c07a8577fe4bf5-ca4d04dc232ebfa8bc09",
-          "file": "conduit.spec.ts",
-          "line": 39,
-          "column": 5
-        },
-        {
-          "title": "delete article",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 209,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Bu test şu worker üzerinde çalışıyor: 4\n"
-                    },
-                    {
-                      "text": "Status text= No Content\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-09-04T11:40:26.896Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "3574f5c07a8577fe4bf5-d28b2721f8f67c3b82e1",
-          "file": "conduit.spec.ts",
-          "line": 64,
+          "line": 62,
           "column": 5
         }
       ]
@@ -450,14 +308,14 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 2,
-                  "parallelIndex": 1,
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 398,
+                  "duration": 227,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Bu test şu worker üzerinde çalışıyor: 2\n"
+                      "text": "Bu test şu worker üzerinde çalışıyor: 1\n"
                     },
                     {
                       "text": "image text= update new\n"
@@ -465,7 +323,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-09-04T11:40:25.590Z",
+                  "startTime": "2025-09-12T13:01:43.584Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -474,47 +332,6 @@
             }
           ],
           "id": "ab920edaadbcb849f3a1-4bc492eab744056b5803",
-          "file": "updateProfil.spec.ts",
-          "line": 5,
-          "column": 5
-        },
-        {
-          "title": "update image url",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 382,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Bu test şu worker üzerinde çalışıyor: 5\n"
-                    },
-                    {
-                      "text": "image text= update new\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-09-04T11:40:26.391Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "ab920edaadbcb849f3a1-a981263ab5d38e9dade8",
           "file": "updateProfil.spec.ts",
           "line": 5,
           "column": 5
@@ -540,22 +357,22 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "parallelIndex": 2,
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 417,
+                  "duration": 212,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "Bu test şu worker üzerinde çalışıyor: 3\n"
+                      "text": "Bu test şu worker üzerinde çalışıyor: 1\n"
                     },
                     {
-                      "text": "Username text= User_Jessica\n"
+                      "text": "Username text= User_Virgil\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-09-04T11:40:25.701Z",
+                  "startTime": "2025-09-12T13:01:43.826Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -567,56 +384,15 @@
           "file": "updateUsername.spec.ts",
           "line": 4,
           "column": 5
-        },
-        {
-          "title": "update username",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 6,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 375,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Bu test şu worker üzerinde çalışıyor: 6\n"
-                    },
-                    {
-                      "text": "Username text= User_Filiberto\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-09-04T11:40:26.579Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "b50c3f73d543c402d409-a6731c0788364984efe0",
-          "file": "updateUsername.spec.ts",
-          "line": 4,
-          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-09-04T11:40:23.973Z",
-    "duration": 3194.4179999999997,
-    "expected": 11,
+    "startTime": "2025-09-12T13:01:40.597Z",
+    "duration": 3476.0570000000007,
+    "expected": 6,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
