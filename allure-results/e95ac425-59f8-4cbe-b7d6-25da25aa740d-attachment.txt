@@ -1,0 +1,3 @@
+Bu test şu worker üzerinde çalışıyor: 4
+OK
+New slugId= New-Article-update_Global-Data-Planner-32110

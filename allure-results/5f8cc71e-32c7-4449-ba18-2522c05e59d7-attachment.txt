@@ -1,0 +1,2 @@
+Bu test şu worker üzerinde çalışıyor: 5
+image text= update new

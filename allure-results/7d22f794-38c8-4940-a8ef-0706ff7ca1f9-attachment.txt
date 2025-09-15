@@ -1,0 +1,20 @@
+Bu test şu worker üzerinde çalışıyor: 4
+https://conduit-api.bondaracademy.com/api/articles/
+Response body= {"article":{"slug":"New-Article_Bulah-32110","title":"New Article_Bulah","description":"New Article Descpription_Trans woman","body":"New Article Body_Directives","tagList":["playwright"],"createdAt":"2025-09-15T11:28:06.172Z","updatedAt":"2025-09-15T11:28:06.172Z","favorited":false,"favoritesCount":0,"author":{"username":"User_Destini","bio":null,"image":"update new","following":false}}}
+Created
+{"article":{"slug":"New-Article_Bulah-32110","title":"New Article_Bulah","description":"New Article Descpription_Trans woman","body":"New Article Body_Directives","tagList":["playwright"],"createdAt":"2025-09-15T11:28:06.172Z","updatedAt":"2025-09-15T11:28:06.172Z","favorited":false,"favoritesCount":0,"author":{"username":"User_Destini","bio":null,"image":"update new","following":false}}}
+application/json; charset=utf-8
+[
+  { name: 'x-powered-by', value: 'Express' },
+  { name: 'vary', value: 'Origin' },
+  { name: 'content-type', value: 'application/json; charset=utf-8' },
+  { name: 'etag', value: 'W/"187-ESEpXq1FywWk2twSdNxNGLORoEg"' },
+  {
+    name: 'x-cloud-trace-context',
+    value: '1ae1a11834c07204798a1d3c83df4433'
+  },
+  { name: 'date', value: 'Mon, 15 Sep 2025 11:28:06 GMT' },
+  { name: 'server', value: 'Google Frontend' },
+  { name: 'Content-Length', value: '391' }
+]
+Slug Id= New-Article_Bulah-32110
